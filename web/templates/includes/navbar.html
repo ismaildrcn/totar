@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand">
+            TOTAR
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                
+                <a href="/about" class="nav-item nav-link">About</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                {% if session["Logged_in"] %}
+                    <a href="/dashboard" class="nav-item nav-link active">Dashboard</a>
+                    <a href="/data" class="nav-item nav-link">Data</a>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-outline-warning btn-sm">
+                            <a href="/logout" class="nav-item nav-link">Logout</a>
+                        </button>
+                    </div>
+                {% else %}
+                <div class="d-grid gap-2 d-md-block"></div>
+                    <button type="button" class="btn btn-outline-success btn-sm">
+                        <a href="/login" class="nav-item nav-link">Login</a>
+                    </button>
+                </div>
+                {% endif %}
+                <button type="button" class="btn btn-outline-info btn-sm">
+                    <a href="/register" class="nav-item nav-link">Register</a>
+                </button>
+                
+            </div>
+        </div>
+    </div>
+</nav>
