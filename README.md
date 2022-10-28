@@ -3,10 +3,6 @@
 #### _Tübitak 2209-A Projesi_
 > Not: Tüm sistem Jetson Nano 4 GB üzerinde çalıştırılmıştır.
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 Bu projenin asıl amacı olan radar hız denetleme sistemlerini tam otonom hale getirmektir. Şu anda mobil radar hız denetleme sistemleri kamera ve radar yardımıyla plaka ve hız verisi elde edildikten sonra bir memur tarafından el ile makbuz kesilerek ceza yazılmaktadır. Bu proje gerek insan yükünü azaltmak gerek uluşabilecek aksaklıkların ve hataların önüne geçmek için kullanılması amaçlanmaktadır. 
 
 Bu araştırma projesi sayesinde gelişen teknolojiyle beraber akıllı hale gelen şehirleşmelerde insan yükünü azaltarak ve işlemleri otomatize bir şekilde bilgisayara devrederek teknolojiye ayak uydurulacaktır. Ayrıca oluşabilecek teknik hataların önüne geçilerek sistem ve çalışan birey kaynaklı kaçak geçişler en aza indirilecektir. Çalışan sistemle beraber elde edilen veriler anlık olarak localde oluşturulan web arayüze aktarılmaktadır.
@@ -32,11 +28,16 @@ Python3.7.1 ve Python3.8.10 versiyonları Jetson Nano ile uyumlu Anaconda üzeri
 Kullanıcı ve tespit edile araç plakaları 2 ayrı SQL tablosunda tutulmaktadır. Database olarak SQLite3 kullanılmıştır.
 
 ### Hardware
-> Jetson Nano 4 GB
-> Raspberry Pi Camera V2
-> Arduino Uno
-> Ublox Neo6M GPS Module
-> DHT11 Temprature Sensor
+> Jetson Nano 4 GB  
+> Raspberry Pi Camera V2  
+> Arduino Uno  
+> Ublox Neo6M GPS Module  
+> DHT11 Temprature Sensor  
 > 1.8" RGB TFT Display
 
 ### Bazı Görseller
+![Dashboard](https://github.com/ismaildrcn/totar/blob/master/images/dashboard.png)
+
+![Data](https://github.com/ismaildrcn/totar/blob/master/images/data.png)
+
+![Register](https://github.com/ismaildrcn/totar/blob/master/images/register.png)
